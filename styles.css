@@ -43,7 +43,7 @@ body{
   z-index: auto;
   color: white;
   position: absolute;
-  font-family: 'Open Sans', 'Fira Sans', 'Lucida Sans', 'Lucida Sans Unicode', 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+  font-family: 'Arial MT Rounded Bold', 'Calibri', 'Open Sans', 'Fira Sans', 'Lucida Sans', 'Lucida Sans Unicode', 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
 } 
 
 .dropdown-content a {
@@ -166,7 +166,7 @@ p {
   background-color: black;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Arial MT Rounded Bold', 'Open Sans', 'Fira Sans', 'Lucida Sans', 'Lucida Sans Unicode', 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+  font-family: 'Arial MT Rounded Bold', 'Calibri', 'Open Sans', 'Fira Sans', 'Lucida Sans', 'Lucida Sans Unicode', 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
   color: white;
   margin: 0 35%;
 }
