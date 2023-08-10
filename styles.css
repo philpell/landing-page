@@ -1,6 +1,60 @@
+:root.dark {
+  --border-btn: 1px solid rgb(255, 255, 255);
+  --color-base-bg: rgb(0, 0, 0);
+  --color-base-text: rgb(255, 255, 255);
+  --color-btn-bg: rgb(0, 0, 0);
+  --color-btn-txt: rgb(255, 255, 255);
+  --main-background-image: url(images/landingBackgroundTwo.jpg);
+  
+}
+
+:root.light {
+  --border-btn: 1px solid rgb(134, 198, 255);
+  --color-base-bg: rgb(255, 255, 255);
+  --color-base-text: rgb(0, 0, 0);
+  --color-btn-bg: rgb(255, 255, 255);
+  --color-btn-txt: rgb(0, 0, 0);
+  --main-background-image: url(images/landingBackgroundThree.jpg);
+}
+
+body,
+.theme-toggle {
+  color: var(--color-base-text);
+}
+
+body {
+  background-color: var(--color-base-bg);
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.theme-toggle {
+  background-color: var(--color-btn-bg);
+  border: var(--border-btn);
+  font-size: 1.125rem;
+  padding: 10px 20px;
+}
+
+.theme-toggle:hover {
+  cursor: pointer;
+}
+
+.theme-toggle:focus {
+  outline: var(--border-btn);
+}
+
 .topBanner{
     display: flex;   
-    background-color: black;
+    background-color: var(--color-btn-bg);
     height: 170px;
 }
 
@@ -10,10 +64,6 @@
   z-index: auto;
 }
 
-body{
-  background-color: black;
-}
-
 .dropBtn {
   padding: 10px 20px;
   margin: 20px;
@@ -21,27 +71,27 @@ body{
   font-size: 60px;
   border: none;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-txt);
   position: absolute;
   right: 5%;
 }
 
 .dropBtn:hover {
-  color: white;
+  color: var(--color-btn-txt);
   
   }
   
 .dropBtn:active {
-  background-color: black;
-  color: white;
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-txt);
 }
 
 .dropdown-content {
   display: none;
-  background-color: black;
+  background-color: var(--color-btn-bg);
   z-index: auto;
-  color: white;
+  color: var(--color-btn-txt);
   position: absolute;
   font-family: 'Arial MT Rounded Bold', 'Calibri', 'Open Sans', 'Fira Sans', 'Lucida Sans', 'Lucida Sans Unicode', 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
 } 
@@ -52,7 +102,7 @@ body{
 }
 
 .dropdown a:hover {  
-  background-color: black;
+  background-color: var(--color-btn-bg);
 }
 
 .show {
@@ -65,7 +115,7 @@ body{
   margin: 50px;
   background-image: none;
   outline: none;
-  color: white;
+  color: var(--color-btn-txt);
   font-size: 50px;
   font-weight: 700;
   text-align: end;
@@ -79,12 +129,12 @@ body{
 
 .heading {
     display: flex;
-    background-image: url(images/landingBackgroundTwo.jpg);
+    background-image: var(--main-background-image);
     background-size: 100%;
     font-family: 'dancing_scriptregular';
     font-size: 80px;
     align-items: center;
-    color: white;
+    color: var(--color-btn-txt);
     height: 900px;
 }
 
@@ -101,47 +151,45 @@ body{
 
 h1 {
     font-weight: 900;
-    color: white;
+    color: var(--color-btn-txt);
     margin-left: 30px;
 }
 
 .linkBody {
     display: flex;
-    background-color: black;
+    background-color: var(--color-btn-bg);
     font-family: 'dancing_scriptregular';
     font-size: 18px;
 }
 
 a {
-    height: 60px;
-    width: 200px;
-    background-image: url(images/landingBackground.jpg);
-    background-size: 100%;
-    outline: rgb(0, 28, 0) solid 1px;
-    margin: 50px;
-    padding: 40px;
-    border-radius: 5px;
-    color: white;
-    font-size: 50px;
-    font-weight: 700;
-    text-align: end;
-    flex: 1;
-    transition: all .5s ease-in-out;
+  height: 60px;
+  width: 200px;
+  background-image: var(--main-background-image);
+  background-size: 100%;
+  outline: rgb(0, 28, 0) solid 1px;
+  margin: 50px;
+  padding: 40px;
+  border-radius: 5px;
+  color: var(--color-btn-txt);
+  font-size: 50px;
+  font-weight: 700;
+  text-align: end;
+  flex: 1;
+  transition: all .5s ease-in-out;
 }
 
 a:hover {
-    background-color: black;
-    background-image: none;
-    outline: none;
-    transform: scale(1.1);
+  background-color: var(--color-btn-bg);
+  background-image: none;
+  outline: none;
+  transform: scale(1.1);
 }
-
-
 
 .quoteSection {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 20, 0);
+  background-color: var(--color-btn-bg);
   background-size: 100%;
   font-family: 'Arial MT Rounded Bold', 'Calibri', 'Open Sans', 'Fira Sans', 'Lucida Sans', 'Lucida Sans Unicode', 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
   padding: 40px;
@@ -150,7 +198,7 @@ a:hover {
 p {
   font-family: 'Arial MT Rounded Bold', 'Calibri','Open Sans', 'Fira Sans', 'Lucida Sans', 'Lucida Sans Unicode', 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
   font-size: 35px;
-  color: white;
+  color: var(--color-btn-txt);
   text-align: center;
   font-style: italic;
 }
@@ -163,11 +211,11 @@ p {
 
 .footer {
   display: flex;
-  background-color: black;
+  background-color: var(--color-btn-bg);
   font-size: 18px;
   font-weight: 600;
   font-family: 'Arial MT Rounded Bold', 'Calibri', 'Open Sans', 'Fira Sans', 'Lucida Sans', 'Lucida Sans Unicode', 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
-  color: white;
+  color: var(--color-btn-txt);
   margin: 0 35%;
 }
 
